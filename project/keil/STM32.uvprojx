@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>STM32</TargetName>
+      <TargetName>qitas</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
@@ -48,14 +48,14 @@
             <NotGenerated>0</NotGenerated>
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
-          <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>STM32_F1</OutputName>
+          <OutputDirectory>.\obj\</OutputDirectory>
+          <OutputName>RFID</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
-          <ListingPath>.\Listings\</ListingPath>
+          <ListingPath>.\list\</ListingPath>
           <HexFormatSelection>1</HexFormatSelection>
           <Merge32K>0</Merge32K>
           <CreateBatchFile>0</CreateBatchFile>
@@ -379,63 +379,52 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>USER</GroupName>
+          <GroupName>user</GroupName>
           <Files>
+            <File>
+              <FileName>app.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_app_hooks.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\os_app_hooks.c</FilePath>
+            </File>
+            <File>
+              <FileName>rc522_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\rc522_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart2_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\uart2_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>open_result_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\open_result_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>led_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\led_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>flash_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\flash_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>watch_dog.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\watch_dog.c</FilePath>
+            </File>
             <File>
               <FileName>stm32f10x_it.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\stm32f10x_it.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>2</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>1</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>1</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <uC99>2</uC99>
-                    <uGnu>2</uGnu>
-                    <useXO>2</useXO>
-                    <v6Lang>0</v6Lang>
-                    <v6LangP>0</v6LangP>
-                    <vShortEn>2</vShortEn>
-                    <vShortWch>2</vShortWch>
-                    <v6Lto>0</v6Lto>
-                    <v6WtE>0</v6WtE>
-                    <v6Rtti>2</v6Rtti>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
+              <FilePath>..\user\stm32f10x_it.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -495,7 +484,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>LIB</GroupName>
+          <GroupName>Libs</GroupName>
           <Files>
             <File>
               <FileName>stm32f10x_rtc.c</FileName>
@@ -795,51 +784,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>APP</GroupName>
-          <Files>
-            <File>
-              <FileName>app.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\APP\app.c</FilePath>
-            </File>
-            <File>
-              <FileName>os_app_hooks.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\APP\os_app_hooks.c</FilePath>
-            </File>
-            <File>
-              <FileName>rc522_task.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\APP\rc522_task.c</FilePath>
-            </File>
-            <File>
-              <FileName>uart2_task.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\APP\uart2_task.c</FilePath>
-            </File>
-            <File>
-              <FileName>open_result_task.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\APP\open_result_task.c</FilePath>
-            </File>
-            <File>
-              <FileName>led_task.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\APP\led_task.c</FilePath>
-            </File>
-            <File>
-              <FileName>flash_task.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\APP\flash_task.c</FilePath>
-            </File>
-            <File>
-              <FileName>watch_dog.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\APP\watch_dog.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>::CMSIS</GroupName>
         </Group>
       </Groups>
@@ -852,7 +796,7 @@
       <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.0.1" condition="ARMv6_7_8-M Device">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.0.1"/>
         <targetInfos>
-          <targetInfo name="STM32"/>
+          <targetInfo name="qitas"/>
         </targetInfos>
       </component>
     </components>
