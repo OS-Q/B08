@@ -1,23 +1,8 @@
-﻿# [RFID](https://github.com/qitas/RFID) 
-
-基于STM32F103C8T6单片机ucos III实时系统
-
+﻿# [uCOS-III](https://github.com/qitas/uCOS) 
 ### qitas@qitas.cn
+#### 归属：[RTOS](https://github.com/Qitas/RTOS)
 
----
-
-## [描述](https://github.com/qitas/RFID/wiki) 
-
-
-## [组成](qitas/) 
-
-### [文献资料](docs/) 
-
-### [工程文件](project/) 
-
-
----
-
-## 锻造最美之器
+[uCOS-III](https://www.micrium.com/) 是常见的RTOS之一，本工程收录整理相关资料
 
 [![sites](qitas/qitas.png)](http://www.qitas.cn)
+## 锻造最美之器
