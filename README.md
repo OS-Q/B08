@@ -1,8 +1,7 @@
-﻿# [uCOS-III](https://github.com/qitas/uCOS) 
-### qitas@qitas.cn
-#### 归属：[RTOS](https://github.com/Qitas/RTOS)
+﻿# [toki](https://github.com/qitas/toki) 
+#### qitas@qitas.cn
+[![sites](http://182.61.61.133/link/resources/head.png)](http://www.qitas.cn) 
 
-[uCOS-III](https://www.micrium.com/) 是常见的RTOS之一，本工程收录整理相关资料
+[toki](https://github.com/qitas/toki) 探索硬件设计编程开发模式，kicad各类数据转换
 
-[![sites](qitas/qitas.png)](http://www.qitas.cn)
 ## 锻造最美之器
