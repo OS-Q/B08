@@ -1,7 +1,10 @@
-﻿# [toki](https://github.com/qitas/toki) 
-#### qitas@qitas.cn
-[![sites](http://182.61.61.133/link/resources/head.png)](http://www.qitas.cn) 
+# [B08](https://github.com/OS-Q/B08)
 
-[toki](https://github.com/qitas/toki) 探索硬件设计编程开发模式，kicad各类数据转换
+[![Build Status](https://github.com/OS-Q/B08/workflows/B08/badge.svg)](https://github.com/OS-Q/B08/actions)
 
-## 锻造最美之器
+### [简介](https://github.com/OS-Q/B08/wiki)
+
+[B08](https://github.com/OS-Q/B08) 板级支持 [GD32V103](https://github.com/SoCXin/GD32V103)
+
+
+### [Q = (OpenSource & OperatingSystem) ](http://www.OS-Q.com)

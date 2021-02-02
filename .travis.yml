@@ -1,0 +1,16 @@
+language: python
+python:
+  - "3.7"
+
+env:
+  - PLATFORMIO_PROJECT_DIR=projects/Blink
+
+install:
+  - pip install -U https://github.com/OS-Q/S03/archive/master.zip
+  - platformio platform install https://github.com/OS-Q/P08.git
+
+script:
+  - platformio run -s -d $PLATFORMIO_PROJECT_DIR
+
+notifications:
+  email: false
