@@ -1,0 +1,46 @@
+{
+    "build": {
+        "arduino": {
+            "ldscript": "GD32VF103xB.lds"
+        },
+        "f_cpu": "108000000L",
+        "native": {
+            "ldscript": "GD32VF103xB.lds"
+        },
+        "hwids": [
+            [
+                "0x28e9",
+                "0x0189"
+            ]
+        ],
+        "mabi": "ilp32",
+        "march": "rv32imac",
+        "mcmodel": "medlow",
+        "mcu": "GD32VF103CBT6",
+        "variant": "sipeed-longan-nano",
+        "board_def": "BOARD_SIPEED_LONGAN_NANO",
+        "hxtal_value": "8000000"
+    },
+    "debug":{
+        "svd_path": "GD32VF103.svd"
+    },
+    "frameworks": [
+        "native",
+        "arduino"
+    ],
+    "name": "Longan Nano",
+    "upload": {
+        "maximum_ram_size": 32768,
+        "maximum_size": 131072,
+        "protocol": "sipeed-rv-debugger",
+        "protocols": [
+            "jlink",
+            "gd-link",
+            "rv-link",
+            "sipeed-rv-debugger",
+            "serial"
+        ]
+    },
+    "url": "https://www.OS-Q.com/",
+    "vendor": "OS-Q"
+}
